@@ -3,7 +3,7 @@ PASSWORD = "ce4h-x7dj-sy07-gpbt"
 SCL = 4 -- GPIO2
 SDA = 3 -- GPIO0
 DHTPIN = 5 
-ALT = 440 -- ALTITUDE [m]
+ALTI = 440 -- ALTITUDE
 
 bmp085 = require("bmp085") 
 dht = require("dht")
@@ -102,7 +102,7 @@ function readBMP()
     bmp085.init(SDA, SCL)
     local t = bmp085.temperature()/10
     local p = bmp085.pressure()/100
-    local p = p*((t+273.15)/((t+273.15)+0.0065*ALT))^-5.255 
+    local p = p*((t+273.15)/((t+273.15)+0.0065*ALTI))^-5.255 
     print("Temperature: " .. t .. " degrees C")
     print("Pressure: " .. p .. "Hpa")
     return t,p
