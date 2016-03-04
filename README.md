@@ -1,3 +1,16 @@
 # NODEmcuStation
 
-Station meteo utilisant un nodemcu, un capteur d'humidité, de température et de pression, les données sont envoyées sur ubidots.com via l'API du site.
+NODEmcuStation is a small weather station using a NODEMCU and 2 sensors: 
+- BMP180 (pressure and temperature)
+- DHT11 (humidity and temperature)
+
+The repository include:
+
+- The windows drivers (usb to uart)
+- The LUA IDE (ESPlorer)
+- The nodemcu firmware
+- The nodemcu flasher
+- The LUA script
+
+The script file have to be called init.lua in order to be autorun (if we use an external power supply).
+
