@@ -1,5 +1,5 @@
-SSID = "EOQ-15605"
-PASSWORD = "ce4h-x7dj-sy07-gpbt"
+SSID = "xxxxxxxxxxxxxxx"
+PASSWORD = "xxxxxxxxxxxxxxxx"
 SCL = 4 -- GPIO2
 SDA = 3 -- GPIO0
 DHTPIN = 5
